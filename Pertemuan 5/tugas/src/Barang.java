@@ -3,11 +3,17 @@ import java.util.ArrayList;
 public class Barang {
     private String namaBarang;
     private int hargaBarang, jumlahBarang;
+    public void setNamaBarang(String namaBarang) {
+        this.namaBarang = namaBarang;
+    }
 
-    // generate setter namaBarang
-//    public void setNamaBarang(String namaBarang) {
-//        this.namaBarang = namaBarang;
-//    }
+    public void setHargaBarang(int hargaBarang) {
+        this.hargaBarang = hargaBarang;
+    }
+
+    public void setJumlahBarang(int jumlahBarang) {
+        this.jumlahBarang = jumlahBarang;
+    }
 
     public Barang(String namaBarang, int hargaBarang, int jumlahBarang) {
         this.namaBarang = namaBarang;
