@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Toko {
-    List<Pembeli> antrian = new ArrayList<>();
+    private List<Pembeli> antrian = new ArrayList<>();
     private Gudang gudangBarang = new Gudang();
-    TIPEBARANG tipeBarang;
+    private TIPEBARANG tipeBarang;
     enum TIPEBARANG {
         KURSI, MEJA, LEMARI
     }
@@ -13,11 +13,18 @@ public class Toko {
         return gudangBarang;
     }
     public void tambahAntrian(Pembeli pembeli){
-        if (antrian.size() > 5){
+        if (antrianPenuh()){
             System.out.println("antrian penuh");
         } else {
             antrian.add(pembeli);
             System.out.println("berhasil menambah antrian");
+        }
+    }
+    private Boolean antrianPenuh() {
+        if (antrian.size() > 5) {
+            return true;
+        } else {
+            return false;
         }
     }
     public void cekIsiAntrian(){
@@ -32,14 +39,21 @@ public class Toko {
         System.out.println();
     }
     public void selesaikanAntrian(){
-        Toko.TIPEBARANG barang = antrian.get(0).getBarangDiBeli();
-        Integer jumlah = antrian.get(0).getJumlahBarang();
-        Integer jumlahProduk = getGudangBarang().isiGudang.get(barang);
-        if (jumlahProduk >= jumlah){
-            getGudangBarang().isiGudang.put(barang, jumlahProduk - jumlah);
+        if(barangDiBeliTersedia()){
             antrian.remove(0);
-            System.out.println(jumlah+" "+barang+" berhasil di keluarkan dari gudang");
             System.out.println("antrian terdepan berhasil di selesaikan");
         }
     }
+     private Boolean barangDiBeliTersedia() {
+        Toko.TIPEBARANG barang = antrian.get(0).getBarangDiBeli();
+        Integer jumlah = antrian.get(0).getJumlahBarang();
+        Integer jumlahProduk = getGudangBarang().isiGudang.get(barang);
+        if (jumlahProduk >= jumlah) {
+            getGudangBarang().isiGudang.put(barang, jumlahProduk - jumlah);
+            System.out.println(jumlah+" "+barang+" berhasil di keluarkan dari gudang");
+            return true;
+        } else {
+            return false;
+        }
+     }
 }
