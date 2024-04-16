@@ -12,21 +12,6 @@ public class Toko {
     public Gudang getGudangBarang() {
         return gudangBarang;
     }
-    public void tambahAntrian(Pembeli pembeli){
-        if (antrianPenuh()){
-            System.out.println("antrian penuh");
-        } else {
-            antrian.add(pembeli);
-            System.out.println("berhasil menambah antrian");
-        }
-    }
-    private Boolean antrianPenuh() {
-        if (antrian.size() > 5) {
-            return true;
-        } else {
-            return false;
-        }
-    }
     public void cekIsiAntrian(){
         System.out.println();
         System.out.println("LIST ANTRIAN");
@@ -38,22 +23,37 @@ public class Toko {
         }
         System.out.println();
     }
-    public void selesaikanAntrian(){
-        if(barangDiBeliTersedia()){
-            antrian.remove(0);
-            System.out.println("antrian terdepan berhasil di selesaikan");
-        }
-    }
-     private Boolean barangDiBeliTersedia() {
-        Toko.TIPEBARANG barang = antrian.get(0).getBarangDiBeli();
-        Integer jumlah = antrian.get(0).getJumlahBarang();
+     private Boolean barangDiBeliTersedia(Integer jumlah, Toko.TIPEBARANG barang) {
         Integer jumlahProduk = getGudangBarang().isiGudang.get(barang);
         if (jumlahProduk >= jumlah) {
-            getGudangBarang().isiGudang.put(barang, jumlahProduk - jumlah);
-            System.out.println(jumlah+" "+barang+" berhasil di keluarkan dari gudang");
             return true;
         } else {
             return false;
         }
      }
+    public void selesaikanAntrian(){
+        Toko.TIPEBARANG barang = antrian.get(0).getBarangDiBeli(); // barang yang ingin dibeli
+        Integer jumlah = antrian.get(0).getJumlahBarang(); // jumlah yang ingin dibeli
+        if(barangDiBeliTersedia(jumlah, barang)){
+            gudangBarang.keluarkanBarangDariGudang(barang, jumlah);
+            System.out.println(jumlah+" "+barang+" berhasil di keluarkan dari gudang");
+            antrian.remove(0);
+            System.out.println("antrian terdepan berhasil di selesaikan");
+        }
+    }
+    private Boolean antrianPenuh() {
+        if (antrian.size() > 5) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public void tambahAntrian(Pembeli pembeli){
+        if (antrianPenuh()){
+            System.out.println("antrian penuh");
+        } else {
+            antrian.add(pembeli);
+            System.out.println("berhasil menambah antrian");
+        }
+    }
 }

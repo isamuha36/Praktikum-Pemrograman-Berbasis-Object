@@ -51,48 +51,82 @@ public class Gudang {
             System.out.println("Bahan tidak ditemukan");
         }
     }
-    public void buatBarang(Toko.TIPEBARANG tipebarang, Integer jumlah) {
-        if(tipebarang == Toko.TIPEBARANG.KURSI){
-            if(stokBahan.get(BAHAN.KAYU) >= 2*jumlah && stokBahan.get(BAHAN.BAUT)
-                    >= 10*jumlah && stokBahan.get(BAHAN.CAT) >= 1*jumlah){
-                kurangiBahan(BAHAN.BAUT, 10*jumlah);
-                kurangiBahan(BAHAN.KAYU, 2*jumlah);
-                kurangiBahan(BAHAN.CAT, 1*jumlah);
-                masukanBarangKeGudang(tipebarang, jumlah);
-            } else {
-                System.out.println("Bahan tidak cukup");
-            }
-        } else if (tipebarang == Toko.TIPEBARANG.MEJA) {
-            if(stokBahan.get(BAHAN.KAYU) >= 3*jumlah && stokBahan.get(BAHAN.BAUT)
-                    >= 20*jumlah && stokBahan.get(BAHAN.CAT) >= 2*jumlah) {
-                kurangiBahan(BAHAN.BAUT, 20*jumlah);
-                kurangiBahan(BAHAN.KAYU, 3*jumlah);
-                kurangiBahan(BAHAN.CAT, 2*jumlah);
-                masukanBarangKeGudang(tipebarang, jumlah);
-            } else {
-                System.out.println("Bahan tidak cukup");
-            }
-        } else if (tipebarang == Toko.TIPEBARANG.LEMARI) {
-            if(stokBahan.get(BAHAN.KAYU) >= 5*jumlah && stokBahan.get(BAHAN.BAUT)
-                    >= 30*jumlah && stokBahan.get(BAHAN.CAT) >= 3*jumlah) {
-                kurangiBahan(BAHAN.BAUT, 30*jumlah);
-                kurangiBahan(BAHAN.KAYU, 5*jumlah);
-                kurangiBahan(BAHAN.CAT, 3*jumlah);
-                masukanBarangKeGudang(tipebarang, jumlah);
-            } else {
-                System.out.println("Bahan tidak cukup");
+    public Boolean slotTersedia(Toko.TIPEBARANG tipebarang, Integer jumlah) {
+        Boolean cek = false;
+        switch (tipebarang){
+            case KURSI -> {
+                if ((isiGudang.get(tipebarang)+ jumlah) <= 20){
+                    cek = true;
+                }
+            } case MEJA -> {
+                if ((isiGudang.get(tipebarang)+ jumlah) <= 10){
+                    cek = true;
+                }
+            } case LEMARI -> {
+                if ((isiGudang.get(tipebarang)+ jumlah) <= 5){
+                    cek = true;
+                }
             }
         }
+        return cek;
+    }
+    public Boolean bahanPembuatanMencukupi(Toko.TIPEBARANG tipebarang, Integer jumlah){
+        Boolean cek = false;
+        switch (tipebarang){
+            case KURSI -> {
+                if(stokBahan.get(BAHAN.KAYU) >= 2*jumlah && stokBahan.get(BAHAN.BAUT)
+                        >= 10*jumlah && stokBahan.get(BAHAN.CAT) >= 1*jumlah){
+                    cek = true;
+                }
+            }
+            case MEJA -> {
+                if(stokBahan.get(BAHAN.KAYU) >= 3*jumlah && stokBahan.get(BAHAN.BAUT)
+                        >= 20*jumlah && stokBahan.get(BAHAN.CAT) >= 2*jumlah){
+                    cek = true;
+                }
+            }
+            case LEMARI -> {
+                if(stokBahan.get(BAHAN.KAYU) >= 5*jumlah && stokBahan.get(BAHAN.BAUT)
+                        >= 30*jumlah && stokBahan.get(BAHAN.CAT) >= 3*jumlah){
+                    cek = true;
+                }
+            }
+        }
+        return cek;
     }
     public void masukanBarangKeGudang(Toko.TIPEBARANG tipeBarang, Integer jumlah){
-        if(isiGudang.containsKey(tipeBarang)){
-            isiGudang.put(tipeBarang, isiGudang.get(tipeBarang) + jumlah);
-            System.out.println(jumlah+" "+tipeBarang+" berhasil di tambahkan ke gudang");
-        } else{
-            isiGudang.put(tipeBarang, jumlah);
-            System.out.println(jumlah+" "+tipeBarang+" berhasil di tambahkan ke gudang");
+        isiGudang.put(tipeBarang, isiGudang.get(tipeBarang) + jumlah);
+        System.out.println(jumlah+" "+tipeBarang+" berhasil di tambahkan ke gudang");
+    }
+    public void keluarkanBarangDariGudang(Toko.TIPEBARANG barang, Integer jumlah){
+        isiGudang.put(barang, isiGudang.get(barang) - jumlah);
+    }
+    public void buatBarang(Toko.TIPEBARANG tipebarang, Integer jumlah) {
+        if (slotTersedia(tipebarang, jumlah)) {
+            if (bahanPembuatanMencukupi(tipebarang, jumlah)) {
+                switch (tipebarang) {
+                    case KURSI -> {
+                        kurangiBahan(BAHAN.BAUT, 10 * jumlah);
+                        kurangiBahan(BAHAN.KAYU, 2 * jumlah);
+                        kurangiBahan(BAHAN.CAT, 1 * jumlah);
+                        masukanBarangKeGudang(tipebarang, jumlah);
+                    }
+                    case MEJA -> {
+                        kurangiBahan(BAHAN.BAUT, 20 * jumlah);
+                        kurangiBahan(BAHAN.KAYU, 3 * jumlah);
+                        kurangiBahan(BAHAN.CAT, 2 * jumlah);
+                        masukanBarangKeGudang(tipebarang, jumlah);
+                    }
+                    case LEMARI -> {
+                        kurangiBahan(BAHAN.BAUT, 30 * jumlah);
+                        kurangiBahan(BAHAN.KAYU, 5 * jumlah);
+                        kurangiBahan(BAHAN.CAT, 3 * jumlah);
+                        masukanBarangKeGudang(tipebarang, jumlah);
+                    }
+                }
+            } else {
+                System.out.println("Bahan tidak mencukupi");
+            }
         }
     }
 }
-
-
