@@ -7,8 +7,6 @@ public class InternationalStudent extends Student{
     public String getLanguage(){
         return language;
     }
-
-
     public void setNationality(String nationality){
         this.nationality = nationality;
     }

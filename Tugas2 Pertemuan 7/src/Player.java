@@ -32,7 +32,6 @@ public class Player extends Entity{
             System.out.println("# PLAYER SUDAH MATI");
         }
     }
-
     public void attack(Entity entity) {
         if (getHP() <= 0){
             System.out.println("# PLAYER SUDAH MATI");

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         ArrayList<String> listItem = new ArrayList<String>(){{
@@ -43,9 +42,5 @@ public class Main {
         zombie2.attack(P1);
         P1.interact(merchant1);
         P1.attack(zombie1);
-
-
-
-
     }
 }
