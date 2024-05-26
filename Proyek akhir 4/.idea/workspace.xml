@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1ca058e-eb2c-4503-a289-1dfd86827efd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Game/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/Game.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/src/Assets/bg.jpeg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/src/Assets/char.jpeg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/src/GameGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/src/IBergerak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/src/IRuangan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/src/Lift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/src/Mobil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/Pertemuan 10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/BachelorStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/MasterStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tugas Pertemuan 9/src/Karyawan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tugas Pertemuan 9/src/Karyawan.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Isa/Kuliah/Semester 2/Praktikum Pemrograman Berorientasi Object New/Proyek Akhir3"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1ca058e-eb2c-4503-a289-1dfd86827efd" name="Changes" comment="" />
+      <created>1716256108274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716256108274</updated>
+    </task>
+    <servers />
+  </component>
+</project>
