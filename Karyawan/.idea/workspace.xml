@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="791c3760-7d07-4c27-8e0f-f9d6bba6ad2e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Game/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/Game.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/src/Assets/bg.jpeg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/src/Assets/char.jpeg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game/src/GameGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/src/IBergerak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/src/IRuangan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/src/Lift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Interface/src/Mobil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/Pertemuan 10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/BachelorStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/MasterStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Karyawan.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Karyawan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pegawai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Salesman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tugas Pertemuan 9/src/Karyawan.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tugas Pertemuan 9/src/Karyawan.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2gXLlktYyBv7ixUHnfY3q3uTT4S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Isa/Kuliah/Semester 2/Praktikum Pemrograman Berorientasi Object New/untitled1"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="791c3760-7d07-4c27-8e0f-f9d6bba6ad2e" name="Changes" comment="" />
+      <created>1715839130660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715839130660</updated>
+    </task>
+    <servers />
+  </component>
+</project>

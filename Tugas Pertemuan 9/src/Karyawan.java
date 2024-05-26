@@ -1,4 +1,4 @@
-public class Karyawan {
+public abstract class Karyawan {
     static Integer indeks = 0;
     private String nip;
     private String nama;

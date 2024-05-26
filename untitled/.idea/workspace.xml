@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="791c3760-7d07-4c27-8e0f-f9d6bba6ad2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/BachelorStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/MasterStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Pertemuan 10/src/Student.java" afterDir="false" />
+    <list default="true" id="7f00bb1e-78e9-4c7b-919c-348c12da55fe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,13 +16,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 1
 }]]></component>
-  <component name="ProjectId" id="2gXLlktYyBv7ixUHnfY3q3uTT4S" />
+  <component name="ProjectId" id="2gyAXoleRsJLwHPlyFCl8dUJtOw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,18 +32,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="791c3760-7d07-4c27-8e0f-f9d6bba6ad2e" name="Changes" comment="" />
-      <created>1715839130660</created>
+      <changelist id="7f00bb1e-78e9-4c7b-919c-348c12da55fe" name="Changes" comment="" />
+      <created>1716659486938</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715839130660</updated>
+      <updated>1716659486938</updated>
     </task>
     <servers />
   </component>

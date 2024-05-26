@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface IBergerak {
+public interface IBergerak {
+    public boolean canMove(String arah);
 }
